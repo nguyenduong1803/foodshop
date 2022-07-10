@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Học Web Chuẩn</title>
+<link rel="shortcut icon" href="./asset/logoweb.png" type="image/x-icon">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Encode+Sans&family=Montserrat:ital,wght@0,500;1,400&family=Pattaya&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="./fontawesome-free-6.0.0-beta3-web/css/all.min.css">
+<link rel="stylesheet" href="./style.css">
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+var loader = function() {
+    setTimeout(function() {
+        $('#loader').css({ 'opacity': 0, 'visibility':'hidden' });
+    }, 1000);
+};
+$(function(){
+    loader();
+});
+</script>
+<style>
+* { /* reset lại margin và padding cho các tag */
+    margin: 0;
+    padding: 0;
+}
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.circle {
+    height: 40px;
+    margin: 50px auto;
+    position: relative;
+    text-align: center;
+    width: 40px;
+    -webkit-animation: circle_dot 2.0s infinite linear;
+            animation: circle_dot 2.0s infinite linear;
+}
+
+.circle1, .circle2 {
+    height: 60%;
+    display: inline-block;
+    background-color: #ef5f38;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    width: 60%;
+    -webkit-animation: circle_bounce 2.0s infinite ease-in-out;
+            animation: circle_bounce 2.0s infinite ease-in-out;
+}
+
+.circle2 {
+    bottom: 0;
+    top: auto;
+    -webkit-animation-delay: -1.0s;
+            animation-delay: -1.0s;
+}
+
+@-webkit-keyframes circle_dot { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes circle_dot { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+@-webkit-keyframes circle_bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50%      { -webkit-transform: scale(1.0) }
+}
+
+@keyframes circle_bounce {
+    0%, 100% { 
+        -webkit-transform: scale(0.0);
+                transform: scale(0.0);
+    } 50% { 
+        -webkit-transform: scale(1.0);
+                transform: scale(1.0);
+    }
+}
+</style>
+</head>
+<body>
+<div id="loader">
+    <div class="circle">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+</div>
+
+<header class="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand margin-r" href="#">
+                    <img class="nav--logo " src="./asset/logoweb.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="https://www.myfood.cf">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="https://www.myfood.cf/dishes.html">Dishes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="https://www.myfood.cf/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Preview</a>
+                        </li>
+
+                    </ul>
+                    <div class="nav--icon">
+                        <div class="search">
+                            <i class="fas fa-search icon-size"></i>
+                            <div class="search-box">
+                                <div class="container ">
+                                    <div class="d-flex container-search ">
+                                        <input class="search-box__input" type="text" placeholder="Search">
+                                        <button class="search-box__btn">Submit</button>
+                                        <div class="close__input">
+                                            <i class="fas fa-times close-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="logins login-active">
+                            <i class="fas fa-user icon-size login-user "></i>
+                            <ul class="container-login ">
+                                <li class="login-item">
+                                    <a href="https://www.myfood.cf/login.html" class="login-link">Login</a>
+                                </li>
+                                <li class="register">
+                                    <a href="https://www.myfood.cf/login.html" class="login-link">Register</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cart">
+                            <a class="cart-link" href="https://www.myfood.cf/cart.html">
+                                <i class="fas fa-cart-plus icon-size "></i>
+                            </a>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</header>
+<div class="login">
+   
+        <div id="form-login">     
+            <img class="banner-login" src="./asset/banner-login.png" alt="">
+            
+            <form action="" class="form">
+                <h2 class="title-login">LOGIN</h2>
+                <div class="form-item">
+                    <input class="form-input" type="text" placeholder="UserName">
+                    <div class="icon-input-item">
+                        <i class="fa-solid fa-user icon-user font15"></i>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <input class="form-input" type="text" placeholder="Password">
+                    <div class="icon-input-item">
+                        <i class="fa-solid fa-unlock-keyhole icon-look font15"></i>
+                    </div>
+                </div>
+                <button class="login-btn">Login</button>
+                <div class="register">
+                    <h4>REGISTER</h4>
+                    <span>Forgot password?</span>
+                </div>
+                <div class="our-social">
+                    <div class="our-social-item">
+                        <img class="ss-img" src="./asset/logoGoogle.png" alt="">
+                        <span>Sign with Google</span>
+                    </div>
+                    <div class="our-social-item">
+                        <img class="ss-img" src="./asset/apple.png" alt="">
+                        <span>Apple</span>
+                    </div>
+                </div>
+            </form>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <ul class="row footer-item">
+            <li class="col-lg-4">
+                <h5 class="footer-title">Store Infomation</h5>
+                <p  class="footer-link">Address: 60 29th Street Sanfrancisco, CA 99110 507 UNICON TRADED CENTER UNITED States of Americal
+                </p>
+                <p  class="footer-link">Phone: (+00) 123 666 888 </p>
+                <span class="footer-link" >Email: duongcoi1803@gmail.com </span>
+            </li>
+            <li class="col-lg-2">
+                <h5 class="footer-title">Products</h5>
+                <div class="p-info">
+                    <i class="fas fa-chevron-right icon-right"></i>
+                    <p><a  class="footer-link" href="">Contacts us</a></p>
+                </div>
+                <div class="p-info footer-link">
+                    <i class="fas fa-chevron-right icon-right"></i>
+                    <p><a href="">Legan Notice</a></p>
+                </div>
+                <div class="p-info footer-link">
+                    <i class="fas fa-chevron-right icon-right"></i>
+                    <p><a href="">Delivery</a></p>
+                </div>
+                <div class="p-info footer-link">
+                    <i class="fas fa-chevron-right icon-right"></i>
+                    <p><a href="">About us</a></p>
+                </div>
+
+
+            </li>
+            <li class="col-lg-2">
+                <h5 class="footer-title">Infomation</h5>
+                <div class="p-info footer-link">
+                    <i class="fas fa-chevron-right icon-right"></i>
+                    <p><a href="">Contacts us</a></p>
+                </div>
+                <div class="p-info footer-link">
+                    <i class="fas fa-chevron-right icon-right"></i>
+                    <p><a href="">Legan Notice</a></p>
+                </div>
+                <div class="p-info footer-link">
+                    <i class="fas fa-chevron-right icon-right"></i>
+                    <p><a href="">Delivery</a></p>
+                </div>
+                <div class="p-info footer-link">
+                    <i class="fas fa-chevron-right icon-right"></i>
+                    <p><a href="">About us</a></p>
+                </div>
+            </li>
+            <li class="col-lg-4">
+                <h5 class="footer-title">Latest News</h5>
+                <div class="news-item">
+                    <img class="news-img"
+                        src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Chicken-Pizza_exps30800_FM143298B03_11_8bC_RMS.jpg"
+                        alt="">
+                    <div class="news-text">
+                        <h5 class="footer-date">January 18 12 2022</h5>
+                        <p>Anyways REPS is a NYC arency repres enting photographers</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img class="news-img"
+                        src="https://chianui.vn/wp-content/uploads/2019/06/B%C3%92-2-T%E1%BA%A6NG_resize_min-800x800.jpg"
+                        alt="">
+                    <div class="news-text">
+                        <h5 class="footer-date">December 13 2 2022</h5>
+                        <p>Unas risus suscript lorem issum dolor sit amet lore risus suscript </p>
+                    </div>
+                </div>
+            </li>
+            <p class="copyright">@Copyright NguyenDuong Developer</p>
+        </ul>
+    </div>
+</footer>
+<script src="https://kit.fontawesome.com/88fd21d2d5.js" crossorigin="anonymous"></script>
+<script>
+
+</script>
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+</html>

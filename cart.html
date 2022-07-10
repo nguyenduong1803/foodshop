@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="shortcut icon" href="./asset/logoweb.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans&family=Montserrat:ital,wght@0,500;1,400&family=Pattaya&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-beta3-web/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand margin-r" href="#">
+                        <img class="nav--logo " src="./asset/logoweb.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="/dishes.html">Dishes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href=" /about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">Preview</a>
+                            </li>
+                        </ul>
+                        <section class="nav--icon">
+                            <div class="search">
+                                <i class="fas fa-search icon-size"></i>
+                                <div class="search-box">
+                                    <div class="container ">
+                                        <div class="d-flex container-search ">
+                                            <input class="search-box__input" type="text" placeholder="Search">
+                                            <button class="search-box__btn">Submit</button>
+                                            <div class="close__input">
+                                                <i class="fas fa-times close-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <section class="logins">
+                                <i class="fas fa-user icon-size login-user "></i>
+                                <ul class="container-login">
+                                    <li class="login-item">
+                                        <a href=" /login.html" class="login-link">Login</a>
+                                    </li>
+                                    <li class="register">
+                                        <a href=" /login.html" class="login-link">Register</a>
+                                    </li>
+                                </ul>
+
+                            </section>
+                            <sect class="cart ">
+                                <a class="cart-link " href=" /cart.html">
+                                    <i class="fas fa-cart-plus icon-size login-active"></i>
+                                </a>
+                               
+                            </sect>
+                        </section>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <main class="container">
+        <h2 class="title-cart">Cart</h2>
+        <div class="head-cart">
+            <div class="head-cart-product head-cart-product-none">
+                <input type="checkbox" name="">
+                <p>Products </p>
+            </div>
+            <div class="cart-info">
+                <p>Price</p>
+                <p>Quantity</p>
+                <p>Total</p>
+                <p>Action</p>
+            </div>
+
+        </div>
+        <div class="main-cart-product">
+            <article class=" main-cart">
+                <div class="head-cart-product">
+                    <input class="check-product" type="checkbox" name="">
+                    <img src="./asset/sea6.png" alt="" class="cart-info-img">
+                    <p>King Crabs</p>
+                </div>
+                <div class="cart-info">
+                    <p>$ 100</p>
+                <div class="quantity">
+                    <p class="minus quantity-item"><i class="fa-solid fa-minus"></i></p>
+                    <p class="current-number quantity-item">3</p>
+                    <p class="plus quantity-item"><i class="fa-solid fa-plus"></i></p>
+                </div>
+                    <p>$300</p>
+                    <p>Delete</p>
+                </div>
+
+            </article>
+            <article class=" main-cart">
+                <div class="head-cart-product">
+                    <input  class="check-product" type="checkbox" name="">
+                    <img src="./asset/Rectangle 37.png" alt="" class="cart-info-img">
+                    <p>Pizza</p>
+                </div>
+                <div class="cart-info">
+                    <p>$ 300</p>
+                    <div class="quantity">
+                        <p class="minus quantity-item"><i class="fa-solid fa-minus"></i></p>
+                        <p class="current-number quantity-item">1</p>
+                        <p class="plus quantity-item"><i class="fa-solid fa-plus"></i></p>
+                    </div>
+                    <p>$300</p>
+                    <p>Delete</p>
+                </div>
+            </article>
+            <article class=" main-cart">
+                <div class="head-cart-product">
+                    <input class="check-product" type="checkbox" name="">
+                    <img src="./asset/noodle.png" alt="" class="cart-info-img">
+                    <p>Noodle</p>
+                </div>
+                <div class="cart-info">
+                    <p>$ 200</p>
+                    <div class="quantity">
+                        <p class="minus quantity-item"><i class="fa-solid fa-minus"></i></p>
+                        <p class="current-number quantity-item">1</p>
+                        <p class="plus quantity-item"><i class="fa-solid fa-plus"></i></p>
+                    </div>
+                    <p>$200</p>
+                    <p>Delete</p>
+                </div>
+
+            </article>
+            <article class=" main-cart select-all">
+                <div class="head-cart-product">
+                    <input class="select-all-input" type="checkbox" name="" id="select-all">
+
+                    <label for="select-all" class="label-select">Select All(3)</label>
+                </div>
+                <div class="cart-info">
+                    <p>Total Money: $ 0</p>
+                    <button class="btn-delete">Delete All</button>
+                </div>
+
+            </article>
+        </div>
+        <section class="form-address">
+            <h2 class="h2-title title-address font2">New Address</h2>
+            <form id="form-address">
+                <div class="input-info-user">
+                    <div class="form-item">
+                        <input class="form-input input-height" type="text" placeholder="FullName">
+                        <div class="icon-input-item">
+                            <i class="fa-solid fa-user icon-user font15"></i>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <input class="form-input input-height" type="text" placeholder="Phone Number">
+                        <div class="icon-input-item">
+                            <i class="fa-solid fa-phone icon-look font15"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <input class="form-input input-height" type="text" placeholder="Address">
+                    <div class="icon-input-item">
+                        <i class="fa-solid fa-house-chimney-crack icon-user font15"></i>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <input class="form-input form-item-tall " type="text" placeholder="Address detail">
+
+                </div>
+                <button class="address-btn">Office</button>
+                <button class="address-btn">Home</button>
+                <div class="buy-btn-item">
+                    <button class="address-btn buy-btn">Buy Now</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <ul class="row footer-item">
+                <li class="col-lg-4">
+                    <h5 class="footer-title">Store Infomation</h5>
+                    <p  class="footer-link">Address: 60 29th Street Sanfrancisco, CA 99110 507 UNICON TRADED CENTER UNITED States of Americal
+                    </p>
+                    <p  class="footer-link">Phone: (+00) 123 666 888 </p>
+                    <span class="footer-link" >Email: duongcoi1803@gmail.com </span>
+                </li>
+                <li class="col-lg-2">
+                    <h5 class="footer-title">Products</h5>
+                    <div class="p-info">
+                        <i class="fas fa-chevron-right icon-right"></i>
+                        <p><a  class="footer-link" href="">Contacts us</a></p>
+                    </div>
+                    <div class="p-info footer-link">
+                        <i class="fas fa-chevron-right icon-right"></i>
+                        <p><a href="">Legan Notice</a></p>
+                    </div>
+                    <div class="p-info footer-link">
+                        <i class="fas fa-chevron-right icon-right"></i>
+                        <p><a href="">Delivery</a></p>
+                    </div>
+                    <div class="p-info footer-link">
+                        <i class="fas fa-chevron-right icon-right"></i>
+                        <p><a href="">About us</a></p>
+                    </div>
+
+
+                </li>
+                <li class="col-lg-2">
+                    <h5 class="footer-title">Infomation</h5>
+                    <div class="p-info footer-link">
+                        <i class="fas fa-chevron-right icon-right"></i>
+                        <p><a href="">Contacts us</a></p>
+                    </div>
+                    <div class="p-info footer-link">
+                        <i class="fas fa-chevron-right icon-right"></i>
+                        <p><a href="">Legan Notice</a></p>
+                    </div>
+                    <div class="p-info footer-link">
+                        <i class="fas fa-chevron-right icon-right"></i>
+                        <p><a href="">Delivery</a></p>
+                    </div>
+                    <div class="p-info footer-link">
+                        <i class="fas fa-chevron-right icon-right"></i>
+                        <p><a href="">About us</a></p>
+                    </div>
+                </li>
+                <li class="col-lg-4">
+                    <h5 class="footer-title">Latest News</h5>
+                    <div class="news-item">
+                        <img class="news-img"
+                            src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Chicken-Pizza_exps30800_FM143298B03_11_8bC_RMS.jpg"
+                            alt="">
+                        <div class="news-text">
+                            <h5 class="footer-date">January 18 12 2022</h5>
+                            <p>Anyways REPS is a NYC arency repres enting photographers</p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img class="news-img"
+                            src="https://chianui.vn/wp-content/uploads/2019/06/B%C3%92-2-T%E1%BA%A6NG_resize_min-800x800.jpg"
+                            alt="">
+                        <div class="news-text">
+                            <h5 class="footer-date">December 13 2 2022</h5>
+                            <p>Unas risus suscript lorem issum dolor sit amet lore risus suscript </p>
+                        </div>
+                    </div>
+                </li>
+                <p class="copyright">@Copyright NguyenDuong Developer</p>
+            </ul>
+        </div>
+    </footer>
+    <section id="loading"></section>
+
+    <script src="https://kit.fontawesome.com/88fd21d2d5.js" crossorigin="anonymous"></script>
+    <script>
+
+    </script>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

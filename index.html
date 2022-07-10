@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Food</title>
+    <link rel="shortcut icon" href="./asset/logoweb.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans&family=Montserrat:ital,wght@0,500;1,400&family=Pattaya&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-beta3-web/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand margin-r" href="#">
+                        <img class="nav--logo " src="./asset/logoweb.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item ">
+                                <a class="nav-link nav-active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="/dishes.html">Dishes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="   /about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">Preview</a>
+                            </li>
+
+                        </ul>
+                        <div class="nav--icon">
+                            <div class="search">
+                                <i class="fas fa-search icon-size"></i>
+                                <div class="search-box">
+                                    <div class="container ">
+                                        <div class="d-flex container-search ">
+                                            <input class="search-box__input" type="text" placeholder="Search">
+                                            <button class="search-box__btn">Submit</button>
+                                            <div class="close__input">
+                                                <i class="fas fa-times close-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="logins">
+                                <i class="fas fa-user icon-size login-user "></i>
+                                <ul class="container-login">
+                                    <li class="login-item">
+                                        <a href="  /login.html" class="login-link">Login</a>
+                                    </li>
+                                    <li class="register">
+                                        <a href="  /login.html" class="login-link">Register</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cart">
+                                <a class="cart-link" href="  /cart.html">
+                                    <i class="fas fa-cart-plus icon-size "></i>
+                                </a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+   <main class="main-content">
+    <section class="container">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <section class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <article class="head-banner">
+                        <div class="text">
+
+                            <p class="text-top">Our special dish</p>
+                            <h2 class="title-carousel">
+                                Spicy Noodles
+                            </h2>
+                            <p class="text-detail">
+                                hank you for sharing with us your <br> knowledge and making us better!
+                            </p>
+                            <button class="banner-btn"> Oder Now</button>
+                        </div>
+                        <img class="banner-img rounded-circle" src="./asset/bannerweb.png" class="d-block w-100"
+                            alt="...">
+                    </article>
+                </div>
+                <article class="carousel-item " data-bs-interval="10000">
+                    <div class="head-banner">
+                        <div class="text">
+                            <p class="text-top">Our special dish</p>
+                            <h2 class="title-carousel">
+                                Spicy Noodles
+                            </h2>
+                            <p class="text-detail">
+                                hank you for sharing with us your <br> knowledge and making us better!
+                            </p>
+                            <button class="banner-btn"> Oder Now</button>
+                        </div>
+                        <img class="banner-img rounded-circle"
+                            src="./asset/favpng_take-out-vegetarian-cuisine-cafe-indian-cuisine-pizza.png"
+                            class="d-block w-100" alt="...">
+                    </div>
+                </article>
+                <article class="carousel-item" data-bs-interval="10000">
+                    <div class="head-banner">
+                        <div class="text">
+                            <p class="text-top">Our special dish</p>
+                            <h2 class="title-carousel">
+                                Spicy Noodles
+                            </h2>
+                            <p class="text-detail">
+                                hank you for sharing with us your <br> knowledge and making us better!
+                            </p>
+                            <button class="banner-btn"> Oder Now</button>
+                        </div>
+                        <img class="banner-img rounded-circle"
+                            src="./asset/favpng_take-out-vegetarian-cuisine-cafe-indian-cuisine-pizza.png"
+                            class="d-block w-100" alt="...">
+                    </div>
+                </article>
+            </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <h2 class="h2-title">BEST CATEGORIES</h2>
+        <nav >
+           <ul class="d-flex row category ">
+            <li class="category-item col-md-3 col-lg-2 col-sm-4">
+                <img class="category-img" src="./asset/image 12.png" alt="">
+                <p>Burger Cola </p>
+            </li>
+            <li class="category-item col-md-3 col-lg-2 col-sm-4">
+                <img class="category-img" src="./asset/image 13.png" alt="">
+                <p>Chinese food </p>
+            </li>
+            <li class="category-item col-md-3 col-lg-2 col-sm-4">
+                <img class="category-img" src="./asset/image 14.png" alt="">
+                <p>Coffe Mug </p>
+            </li>
+            <li class="category-item col-md-3 col-lg-2 col-sm-4">
+                <img class="category-img" src="./asset/image 15.png" alt="">
+                <p>Cold Drink </p>
+            </li>
+            <li class="category-item col-md-3 col-lg-2 col-sm-4">
+                <img class="category-img" src="./asset/image 16.png" alt="">
+                <p>French Fries </p>
+            </li>
+
+            <li class="category-item col-md-3 col-lg-2 col-sm-4">
+                <img class="category-img" src="./asset/image 17.png" alt="">
+                <p>Pizza</p>
+            </li>
+        <span class="line"></span>
+
+           </ul>
+        </nav>
+
+    </section>
+    <section class="popular">
+        <div class="container">
+            <p class="text-primary">Our dishes</p>
+            <h2 class="title popular-title">POPULAR DISHES </h2>
+            <div class="row">
+                <section class=" col-lg-3 col-md-4 col-sm-6">
+                    <article class="product-item">
+                        <img class="product-img" src="./asset/food17.png" alt="">
+                        <h4 class="product-name">Lobster</h4>
+                        <section class="product-rate">
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star-half-alt product-rate-green"></i>
+                        </section>
+                        <section class="footer-product">
+                            <p class="price">$15.99</p>
+                            <button class="addCart">Add To Cart</button>
+                        </section>
+                        <section class="product-detail">
+                            <i class="fas fa-eye fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
+                        </section>
+                        <section class="product-love">
+                            <i class="fas fa-heart love fa-beat" style="--fa-animation-duration: 2s;"></i>
+                        </section>
+                    </article>
+                </section>
+                <section  class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="product-item">
+                        <img class="product-img" src="./asset/food2.png" alt="">
+                        <h4 class="product-name">Healthy </h4>
+                        <section class="product-rate">
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star-half-alt product-rate-green"></i>
+                        </section>
+                        <section class="footer-product">
+                            <p class="price">$11.99</p>
+                            <button class="addCart">Add To Cart</button>
+                        </section>
+                        <section class="product-detail">
+                            <i class="fas fa-eye fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
+                        </section>
+                        <section class="product-love">
+                            <i class="fas fa-heart love fa-beat" style="--fa-animation-duration: 2s;"></i>
+                        </section>
+                    </article>
+                </section>
+                <section  class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="product-item">
+                        <img class="product-img" src="./asset/food3.png" alt="">
+                        <h4 class="product-name">Humbuger</h4>
+                        <section class="product-rate">
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star-half-alt product-rate-green"></i>
+                        </section>
+                        <section class="footer-product">
+                            <p class="price">$7.43</p>
+                            <button class="addCart">Add To Cart</button>
+                        </section>
+                        <section class="product-detail">
+                            <i class="fas fa-eye fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
+                        </section>
+                        <section class="product-love">
+                            <i class="fas fa-heart love fa-beat" style="--fa-animation-duration: 2s;"></i>
+                        </section>
+                    </article>
+                </section>
+                <section  class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="product-item">
+                        <img class="product-img" src="./asset/food4.png" alt="">
+                        <h4 class="product-name">Fish</h4>
+                        <section class="product-rate">
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star-half-alt product-rate-green"></i>
+                        </section>
+                        <section class="footer-product">
+                            <p class="price">$5.99</p>
+                            <button class="addCart">Add To Cart</button>
+                        </section>
+                        <section class="product-detail">
+                            <i class="fas fa-eye fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
+                        </section>
+                        <section class="product-love">
+                            <i class="fas fa-heart love fa-beat" style="--fa-animation-duration: 2s;"></i>
+                        </section>
+                    </article>
+                </section>
+                <section  class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="product-item">
+                        <img class="product-img" src="./asset/food5.png" alt="">
+                        <h4 class="product-name">Pizza</h4>
+                        <section class="product-rate">
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star-half-alt product-rate-green"></i>
+                        </section>
+                        <section class="footer-product">
+                            <p class="price">$18.99</p>
+                            <button class="addCart">Add To Cart</button>
+                        </section>
+                        <section class="product-detail">
+                            <i class="fas fa-eye fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
+                        </section>
+                        <section class="product-love">
+                            <i class="fas fa-heart love fa-beat" style="--fa-animation-duration: 2s;"></i>
+                        </section>
+                    </article>
+                </section>
+                <section  class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="product-item">
+                        <img class="product-img" src="./asset/food1.png" alt="">
+                        <h4 class="product-name">Beef</h4>
+                        <section class="product-rate">
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star-half-alt product-rate-green"></i>
+                        </section>
+                        <section class="footer-product">
+                            <p class="price">$5.94</p>
+                            <button class="addCart">Add To Cart</button>
+                        </section>
+                        <section class="product-detail">
+                            <i class="fas fa-eye fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
+                        </section>
+                        <section class="product-love">
+                            <i class="fas fa-heart love fa-beat" style="--fa-animation-duration: 2s;"></i>
+                        </section>
+                    </article>
+                </section>
+                <section  class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="product-item">
+                        <img class="product-img" src="./asset/food7.png" alt="">
+                        <h4 class="product-name">Samol</h4>
+                        <section class="product-rate">
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star-half-alt product-rate-green"></i>
+                        </section>
+                        <section class="footer-product">
+                            <p class="price">$11.99</p>
+                            <button class="addCart">Add To Cart</button>
+                        </section>
+                        <section class="product-detail">
+                            <i class="fas fa-eye fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
+                        </section>
+                        <section class="product-love">
+                            <i class="fas fa-heart love fa-beat  style="--fa-animation-duration: 2s;"active-love"></i>
+                        </section>
+                    </article>
+                </section>
+                <section  class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="product-item">
+                        <img class="product-img" src="./asset/food8.png" alt="">
+                        <h4 class="product-name">Healthy</h4>
+                        <section class="product-rate">
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star-half-alt product-rate-green"></i>
+                        </section>
+                        <section class="footer-product">
+                            <p class="price">$18.99</p>
+                            <button class="addCart">Add To Cart</button>
+                        </section>
+                        <section class="product-detail">
+                            <i class="fas fa-eye fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
+                        </section>
+                        <section class="product-love">
+                            <i class="fas fa-heart love fa-beat" style="--fa-animation-duration: 2s;"></i>
+                        </section>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <p class="text-primary">Our us</p>
+        <h2 class="title">WHY CHOOSE US</h2>
+        <section class="row our-us">
+            <div class="col-lg-6 banner__item">
+                <img class="banner-img  rounded-circle" src="./asset/favpng_take-out-vegetarian-cuisine-cafe-indian-cuisine-pizza.png" alt="">
+                <div class="scale__img">1</div>
+            </div>
+            <section class="col-lg-6 our-us-text">
+                <h3>Best Food In The Country</h3>
+                <p>Food is associated with substance consumed to produce organic process support for an organism. it's
+                    sometimes of plant or animal origin, and contains essential nutrients, like carbohydrates, fats,
+                    proteins, vitamins, or minerals.</p>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+
+                        <button class="our-us-btn"><i class="fas fa-shipping-fast icon-our"></i> Free Ship</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <button class="our-us-btn"> <i class="fas fa-utensils icon-our"></i>Delicious</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <button class="our-us-btn"><i class="fas fa-headset icon-our"></i> 24/7</button>
+                    </div>
+                </div>
+                <button class="readMore">Read More</button>
+            </section>
+        </section>
+        <section class="ads row">
+            <article class="col-lg-6 ads-first">
+                <img class="ads-img" src="./asset/Rectangle 27.png" alt="">
+                <div class="sale-description">
+                    <p class="sale">30% Discount</p>
+                    <h4 class="sale-desc">Discount Different Flavours Pizza</h4>
+                    <button class="sale-btn readMore">Order Now</button>
+                </div>
+            </article>
+            <article class="col-lg-6 ads-first">
+                <img class="ads-img" src="./asset/image 18.png" alt="">
+                <div class="sale-description">
+                    <p class="sale">40% Discount</p>
+                    <h4 class="sale-desc">Healthy Food
+                        Collection
+                    </h4>
+                    <button class="sale-btn readMore">Order Now</button>
+                </div>
+            </article>
+        </section>
+    </div>
+    <section class="popular">
+        <div class="container">
+            <div class="text-primary our-menu">Our Menu </div>
+            <h2 class="title popular-title">TODAY’S SPECIALITY </h2>
+            <div class="row">
+                <section class=" col-lg-3 col-md-4 col-sm-6">
+                    <article class="product-item">
+                        <img class="product-img" src="./asset/food9.png" alt="">
+                        <h4 class="product-name">Bread</h4>
+                        <sectsection class="product-rate">
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star-half-alt product-rate-green"></i>
+                        </sectsection>
+                        <sectsection class="footer-product">
+                            <p class="price">$16.49</p>
+                            <button class="addCart">Add To Cart</button>
+                        </sectsection>
+                        <sectsection class="product-detail">
+                            <i class="fas fa-eye fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
+                        </sectsection>
+                        <sectsection class="product-love">
+                            <i class="fas fa-heart love fa-beat" style="--fa-animation-duration: 2s;"></i>
+                        </sectsection>
+                    </article>
+                </section>
+                <section  class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="product-item">
+                        <img class="product-img" src="./asset/food10.png" alt="">
+                        <h4 class="product-name">Bread</h4>
+                        <section class="product-rate">
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star-half-alt product-rate-green"></i>
+                        </section>
+                        <section class="footer-product">
+                            <p class="price">$14.99</p>
+                            <button class="addCart">Add To Cart</button>
+                        </section>
+                        <section class="product-detail">
+                            <i class="fas fa-eye fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
+                        </section>
+                        <section class="product-love">
+                            <i class="fas fa-heart love fa-beat" style="--fa-animation-duration: 2s;"></i>
+                        </section>
+                    </article>
+                </section>
+                <section  class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="product-item">
+                        <img class="product-img" src="./asset/food11.png" alt="">
+                        <h4 class="product-name">Healthy</h4>
+                        <section class="product-rate">
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star-half-alt product-rate-green"></i>
+                        </section>
+                        <section class="footer-product">
+                            <p class="price">$15.99</p>
+                            <button class="addCart">Add To Cart</button>
+                        </section>
+                        <section class="product-detail">
+                            <i class="fas fa-eye fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
+                        </section>
+                        <section class="product-love">
+                            <i class="fas fa-heart love fa-beat" style="--fa-animation-duration: 2s;"></i>
+                        </section>
+                    </article>
+                </section>
+                <section  class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="product-item">
+                        <img class="product-img" src="./asset/food12.png" alt="">
+                        <h4 class="product-name">Chickend</h4>
+                        <section class="product-rate">
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star-half-alt product-rate-green"></i>
+                        </section>
+                        <section class="footer-product">
+                            <p class="price">$10.19</p>
+                            <button class="addCart">Add To Cart</button>
+                        </section>
+                        <section class="product-detail">
+                            <i class="fas fa-eye fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
+                        </section>
+                        <section class="product-love">
+                            <i class="fas fa-heart love fa-beat" style="--fa-animation-duration: 2s;"></i>
+                        </section>
+                    </article>
+                </section>
+                <section  class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="product-item">
+                        <img class="product-img" src="./asset/food13.png" alt="">
+                        <h4 class="product-name">Samol</h4>
+                        <section class="product-rate">
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star-half-alt product-rate-green"></i>
+                        </section>
+                        <section class="footer-product">
+                            <p class="price">$15.99</p>
+                            <button class="addCart">Add To Cart</button>
+                        </section>
+                        <section class="product-detail">
+                            <i class="fas fa-eye fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
+                        </section>
+                        <section class="product-love">
+                            <i class="fas fa-heart love fa-beat" style="--fa-animation-duration: 2s;"></i>
+                        </section>
+                    </article>
+                </section>
+                <section  class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="product-item">
+                        <img class="product-img" src="./asset/food14.png" alt="">
+                        <h4 class="product-name">Pizza</h4>
+                        <section class="product-rate">
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star-half-alt product-rate-green"></i>
+                        </section>
+                        <section class="footer-product">
+                            <p class="price">$15.99</p>
+                            <button class="addCart">Add To Cart</button>
+                        </section>
+                        <section class="product-detail">
+                            <i class="fas fa-eye fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
+                        </section>
+                        <section class="product-love">
+                            <i class="fas fa-heart love fa-beat" style="--fa-animation-duration: 2s;"></i>
+                        </section>
+                    </article>
+                </section>
+                <section  class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="product-item">
+                        <img class="product-img" src="./asset/food15.png" alt="">
+                        <h4 class="product-name">Samol</h4>
+                        <section class="product-rate">
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star-half-alt product-rate-green"></i>
+                        </section>
+                        <section class="footer-product">
+                            <p class="price">$5.99</p>
+                            <button class="addCart">Add To Cart</button>
+                        </section>
+                        <section class="product-detail">
+                            <i class="fas fa-eye fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
+                        </section>
+                        <section class="product-love">
+                            <i class="fas fa-heart love fa-beat  style="--fa-animation-duration: 2s;"active-love"></i>
+                        </section>
+                    </article>
+                </section>
+                <section  class="col-lg-3 col-md-4 col-sm-6">
+                    <article class="product-item">
+                        <img class="product-img" src="./asset/food16.png" alt="">
+                        <h4 class="product-name">Salad</h4>
+                        <section class="product-rate">
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star product-rate-green"></i>
+                            <i class="fas fa-star-half-alt product-rate-green"></i>
+                        </section>
+                        <section class="footer-product">
+                            <p class="price">$9.99</p>
+                            <button class="addCart">Add To Cart</button>
+                        </section>
+                        <section class="product-detail">
+                            <i class="fas fa-eye fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>
+                        </section>
+                        <section class="product-love">
+                            <i class="fas fa-heart love fa-beat" style="--fa-animation-duration: 2s;"></i>
+                        </section>
+                    </article>
+                </section>
+            </div>
+            <div class="pagination ">
+                <span class="page-btn page-active">1</span>
+                <span class="page-btn ">2</span>
+                <span class="page-btn "><i class="fas fa-arrow-right"></i></span>
+            </div>
+        </div>
+
+    </section>
+   </main>
+    <footer class="footer">
+        <nav class="container">
+            <ul class="row footer-item">
+                <li class="col-lg-4">
+                    <h5 class="footer-title">Store Infomation</h5>
+                    <p  class="footer-link">Address: 60 29th Street Sanfrancisco, CA 99110 507 UNICON TRADED CENTER UNITED States of Americal
+                    </p>
+                    <p  class="footer-link">Phone: (+00) 123 666 888 </p>
+                    <span class="footer-link" >Email: duongcoi1803@gmail.com </span>
+                </li>
+                <li class="col-lg-2">
+                    <h5 class="footer-title">Products</h5>
+                    <div class="p-info">
+                        <i class="fas fa-chevron-right icon-right"></i>
+                        <p><a  class="footer-link" href="">Contacts us</a></p>
+                    </div>
+                    <div class="p-info footer-link">
+                        <i class="fas fa-chevron-right icon-right"></i>
+                        <p><a href="">Legan Notice</a></p>
+                    </div>
+                    <div class="p-info footer-link">
+                        <i class="fas fa-chevron-right icon-right"></i>
+                        <p><a href="">Delivery</a></p>
+                    </div>
+                    <div class="p-info footer-link">
+                        <i class="fas fa-chevron-right icon-right"></i>
+                        <p><a href="">About us</a></p>
+                    </div>
+
+
+                </li>
+                <li class="col-lg-2">
+                    <h5 class="footer-title">Infomation</h5>
+                    <div class="p-info footer-link">
+                        <i class="fas fa-chevron-right icon-right"></i>
+                        <p><a href="">Contacts us</a></p>
+                    </div>
+                    <div class="p-info footer-link">
+                        <i class="fas fa-chevron-right icon-right"></i>
+                        <p><a href="">Legan Notice</a></p>
+                    </div>
+                    <div class="p-info footer-link">
+                        <i class="fas fa-chevron-right icon-right"></i>
+                        <p><a href="">Delivery</a></p>
+                    </div>
+                    <div class="p-info footer-link">
+                        <i class="fas fa-chevron-right icon-right"></i>
+                        <p><a href="">About us</a></p>
+                    </div>
+                </li>
+                <li class="col-lg-4">
+                    <h5 class="footer-title">Latest News</h5>
+                    <div class="news-item">
+                        <img class="news-img"
+                            src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Chicken-Pizza_exps30800_FM143298B03_11_8bC_RMS.jpg"
+                            alt="">
+                        <div class="news-text">
+                            <h5 class="footer-date">January 18 12 2022</h5>
+                            <p>Anyways REPS is a NYC arency repres enting photographers</p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img class="news-img"
+                            src="https://chianui.vn/wp-content/uploads/2019/06/B%C3%92-2-T%E1%BA%A6NG_resize_min-800x800.jpg"
+                            alt="">
+                        <div class="news-text">
+                            <h5 class="footer-date">December 13 2 2022</h5>
+                            <p>Unas risus suscript lorem issum dolor sit amet lore risus suscript </p>
+                        </div>
+                    </div>
+                </li>
+                <p class="copyright">@Copyright NguyenDuong Developer</p>
+            </ul>
+        </nav>
+    </footer>
+    <section id="loading"></section>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/88fd21d2d5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
